@@ -90,4 +90,21 @@ public class DrawingView extends View{
     }
 
 
+
+    public void setPattern(String newPattern){
+        //set pattern
+        invalidate();
+        int patternID = getResources().getIdentifier(newPattern, "drawable", "com.example.resindriveway");
+
+        Bitmap patternBMP = BitmapFactory.decodeResource(getResources(), patternID);
+
+        BitmapShader patternBMPshader = new BitmapShader(patternBMP,
+                Shader.TileMode.REPEAT, Shader.TileMode.REPEAT);
+
+        drawPaint.setColor(0xFFFFFFFF);
+        drawPaint.setShader(patternBMPshader);
+
+    }
+
+
 }

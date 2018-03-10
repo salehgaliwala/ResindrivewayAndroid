@@ -4,7 +4,10 @@ package com.example.resindriveway;
  * Created by mustafaflexwala on 10/03/18.
  */
 
+
+import android.os.Bundle;
 import android.view.View;
+
 
 
 public class MainActivity {
@@ -13,9 +16,14 @@ public class MainActivity {
     private DrawingView drawView;
 
 
-    protected void onCreate() {
+    protected void onCreate(Bundle savedInstanceState) {
 
-//        drawView = (DrawingView)findViewById(R.id.drawing);
+/*
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+*/
+
+        drawView = (DrawingView)findViewById(R.id.drawing);
 
     }
 
@@ -23,11 +31,10 @@ public class MainActivity {
             //set pattern
 
         String pattern = view.getTag().toString();
+
+        drawView.setPattern(pattern);
+
     }
 
-    public void setPattern(String newPattern){
-            //set pattern
-//        invalidate();
-//        int patternID = getResources().getIdentifier(newPattern, "drawable", "com.example.resindriveway");
-    }
+
 }

@@ -5,7 +5,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="#FFCCCCCC"
 android:orientation="vertical"
-tools:context="com.example.resindriveway.MainActivity">
+tools:context=".MainActivity">
 
 <com.example.resindriveway.DrawingView
     android:id="@+id/drawing"
@@ -37,7 +37,7 @@ tools:context="com.example.resindriveway.MainActivity">
             android:background="@drawable/pattern1"
             android:contentDescription="pattern"
             android:onClick="paintClicked"
-            android:src="@drawable/paint"
+            android:src="@drawable/pattern1"
             android:tag="pattern1" />
 
         <ImageButton
@@ -47,7 +47,7 @@ tools:context="com.example.resindriveway.MainActivity">
             android:background="@drawable/pattern2"
             android:contentDescription="pattern"
             android:onClick="paintClicked"
-            android:src="@drawable/paint"
+            android:src="@drawable/pattern2"
             android:tag="pattern2" />
 
         <ImageButton
@@ -57,7 +57,7 @@ tools:context="com.example.resindriveway.MainActivity">
             android:background="@drawable/pattern3"
             android:contentDescription="pattern"
             android:onClick="paintClicked"
-            android:src="@drawable/paint"
+            android:src="@drawable/pattern3"
             android:tag="pattern3" />
 
         <ImageButton
@@ -67,7 +67,7 @@ tools:context="com.example.resindriveway.MainActivity">
             android:background="@drawable/pattern4"
             android:contentDescription="pattern"
             android:onClick="paintClicked"
-            android:src="@drawable/paint"
+            android:src="@drawable/pattern4"
             android:tag="pattern4" />
     </LinearLayout>
     <!-- bottom row -->
@@ -83,7 +83,7 @@ tools:context="com.example.resindriveway.MainActivity">
             android:background="@drawable/pattern5"
             android:contentDescription="pattern"
             android:onClick="paintClicked"
-            android:src="@drawable/paint"
+            android:src="@drawable/pattern5"
             android:tag="pattern5" />
 
         <ImageButton
@@ -93,7 +93,7 @@ tools:context="com.example.resindriveway.MainActivity">
             android:background="@drawable/pattern6"
             android:contentDescription="pattern"
             android:onClick="paintClicked"
-            android:src="@drawable/paint"
+            android:src="@drawable/pattern6"
             android:tag="pattern6" />
 
         <ImageButton
@@ -103,7 +103,7 @@ tools:context="com.example.resindriveway.MainActivity">
             android:background="@drawable/pattern7"
             android:contentDescription="pattern"
             android:onClick="paintClicked"
-            android:src="@drawable/paint"
+            android:src="@drawable/pattern7"
             android:tag="pattern7" />
 
         <ImageButton
@@ -113,7 +113,7 @@ tools:context="com.example.resindriveway.MainActivity">
             android:background="@drawable/pattern8"
             android:contentDescription="pattern"
             android:onClick="paintClicked"
-            android:src="@drawable/paint"
+            android:src="@drawable/pattern8"
             android:tag="pattern8" />
     </LinearLayout>
 </LinearLayout>

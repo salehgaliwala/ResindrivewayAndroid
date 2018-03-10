@@ -6,11 +6,12 @@ package com.example.resindriveway;
 
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 
 
-public class MainActivity {
+public class MainActivity extends AppCompatActivity {
 
 
     private DrawingView drawView;
@@ -18,12 +19,10 @@ public class MainActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
 
-/*
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-*/
 
-        drawView = (DrawingView)findViewById(R.id.drawing);
+        drawView = (DrawingView) findViewById(R.id.drawing);
 
     }
 
